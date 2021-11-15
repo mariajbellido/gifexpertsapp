@@ -1,0 +1,17 @@
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+body {
+  padding: 60px;
+}
+
+input {
+  width: 100%;
+  font-size: 1.3rem;
+  color: grey;
+}
