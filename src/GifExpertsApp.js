@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import AddCategory from './components/AddCategory';
+import GifGrid from './components/GifGrid';
 import './style.css';
 
 
@@ -7,7 +8,7 @@ const GifExpertsApp = () => {
 
 
 
- const [categories, setCategories ] = useState(["hello", "friday", "weekend", "christmas"])
+ const [categories, setCategories ] = useState(["hello"])
 
  /* const handleAdd = () => {
   // Option 1
@@ -26,11 +27,12 @@ const GifExpertsApp = () => {
       
       <ul>
         {
-          categories.map((category) => {
-            return (
-              <li key={category}>{category}</li>
-            )
-          })
+          categories.map( category => (
+            <GifGrid 
+              key={category}
+              category={category} 
+            />
+          ))
         }
       </ul>
     </>
